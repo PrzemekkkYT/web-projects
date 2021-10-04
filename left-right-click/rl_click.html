@@ -1,0 +1,43 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/../icon.png">
+    <link rel="stylesheet" href="/../style.css">
+    <title>Przemekkk's random shit</title>
+    
+    <script type="text/javascript">
+        function onHover() {
+            gimper.src = "gimper.jpg";
+            tekst.innerHTML = "no Gimper no";
+        }
+        function leaveHover() {
+            gimper.src = "gimperg.jpg";
+            tekst.innerHTML = "Kto to?";
+        }
+        function logMouseButton(e) {
+            switch (e.button) {
+                case 0:
+                    tekst.innerHTML = 'Left button clicked.';
+                    break;
+                case 1:
+                    tekst.textContent = 'Middle button clicked.';
+                    break;
+                case 2:
+                    tekst.textContent = 'Right button clicked.';
+                    break;
+                default:
+                    tekst.textContent = `Unknown button code: ${e.button}`;
+        }
+  }
+    </script>
+</head>
+<body>
+    <div class="main" id="rl_click_main">
+        <h1 id="tekst">Kto to?</h1>
+        <img src="gimperg.jpg" id="gimper" onmouseover="onHover()" onmouseleave="leaveHover()" />
+        <input type="button" id="button1" onmousedown="logMouseButton(event)">
+    </div>
+</body>
+</html>

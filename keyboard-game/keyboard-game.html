@@ -1,0 +1,30 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/../icon.png">
+    <link rel="stylesheet" href="/../style.css">
+    <title>Przemekkk's random shit</title>
+
+</head>
+<body>
+    <div id="main">
+        <h1 class="header">Snake</h1>
+        <h3 class="centered" id="points">0</h3>
+        <select name="Tryb" id="mapSize" onchange="selected()">
+            <option value="3">Wielkość: 3x3</option>
+            <option selected value="4">Wielkość: 4x4</option>
+            <option value="5">Wielkość: 5x5</option>
+            <option value="6">Wielkość: 6x6</option>
+            <option value="7">Wielkość: 7x7</option>
+            <option value="8">Wielkość: 8x8</option>
+            <option value="9">Wielkość: 9x9</option>
+            <option value="10">Wielkość: 10x10</option>
+        </select>
+        <div id="cells"></div>
+        <input type="button" value="Button" id="btn" onclick="clicked()">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
