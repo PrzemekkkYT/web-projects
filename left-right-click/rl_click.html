@@ -10,11 +10,11 @@
     
     <script type="text/javascript">
         function onHover() {
-            gimper.src = "gimper.jpg";
+            gimper.src = "left-right-click/gimper.jpg";
             tekst.innerHTML = "no Gimper no";
         }
         function leaveHover() {
-            gimper.src = "gimperg.jpg";
+            gimper.src = "left-right-click/gimperg.jpg";
             tekst.innerHTML = "Kto to?";
         }
         function logMouseButton(e) {
@@ -37,7 +37,7 @@
 <body>
     <div class="main" id="rl_click_main">
         <h1 id="tekst">Kto to?</h1>
-        <img src="gimperg.jpg" id="gimper" onmouseover="onHover()" onmouseleave="leaveHover()" />
+        <img src="left-right-click/gimperg.jpg" id="gimper" onmouseover="onHover()" onmouseleave="leaveHover()" />
         <input type="button" id="button1" onmousedown="logMouseButton(event)">
     </div>
 </body>
