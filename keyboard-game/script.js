@@ -9,6 +9,7 @@ var timerWidthStart = 1000;
 var timerWidth = 1000;
 var timerRunning = false;
 var gameover = false;
+var optionSize = 0;
 
 
 function newTreasureCell(optSize) {
@@ -35,7 +36,6 @@ function selectCell(cell) {
 
 
 function keyDown(e) {
-    var optionSize = mapSize.options[mapSize.selectedIndex].index+3;
     console.log(e.code);
     switch (e.code) {
         case "ArrowUp":
@@ -46,7 +46,7 @@ function keyDown(e) {
             }
             break;
         case "ArrowDown":
-            if (selectedCell+(mapSize.options[mapSize.selectedIndex].index+3) < kg_cells.length) {
+            if (selectedCell+optionSize < kg_cells.length) {
                 selectCell(selectedCell+optionSize);
             } else {
                 selectCell(selectedCell-optionSize*(optionSize-1));
@@ -110,6 +110,8 @@ function selected() {
     timerSpeed = 1;
     gameover = false;
     timerBar();
+    optionSize = mapSize.options[mapSize.selectedIndex].index+3;
+    mapSize.remove();
 }
 
 function timerBar() {
