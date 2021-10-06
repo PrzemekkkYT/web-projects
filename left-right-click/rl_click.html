@@ -3,18 +3,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="https://przemekkkyt.github.io/web-projects/">
-    <link rel="icon" href="icon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../icon.png">
+    <link rel="stylesheet" href="../style.css">
     <title>Przemekkk's random shit</title>
     
     <script type="text/javascript">
         function onHover() {
-            gimper.src = "left-right-click/gimper.jpg";
+            gimper.src = "gimper.jpg";
             tekst.innerHTML = "no Gimper no";
         }
         function leaveHover() {
-            gimper.src = "left-right-click/gimperg.jpg";
+            gimper.src = "gimperg.jpg";
             tekst.innerHTML = "Kto to?";
         }
         function logMouseButton(e) {
@@ -37,7 +36,7 @@
 <body>
     <div class="main" id="rl_click_main">
         <h1 id="tekst">Kto to?</h1>
-        <img src="left-right-click/gimperg.jpg" id="gimper" onmouseover="onHover()" onmouseleave="leaveHover()" />
+        <img src="gimperg.jpg" id="gimper" onmouseover="onHover()" onmouseleave="leaveHover()" />
         <input type="button" id="button1" onmousedown="logMouseButton(event)">
     </div>
 </body>

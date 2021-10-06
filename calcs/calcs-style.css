@@ -1,0 +1,56 @@
+body
+{
+    background-color: lightblue;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin: 0 !important;
+    
+}
+#container
+{
+    width: 100%;
+}
+#header
+{
+    width: 100%;
+    padding: 40px 0;
+
+}
+#logo
+{
+    width: 100%;
+    font-size: 40px;
+    border: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content
+{
+	background-color: #717171;
+
+    border-top: 40px solid #717171;
+    border-bottom: 40px solid #717171;
+    border-left: 100px solid #717171;
+    border-right: 100px solid #717171;
+
+     max-width: 80%;
+     margin-left: auto;
+	 margin-right: auto;
+     text-align: justify;
+     padding-top: 10px;
+
+}
+/*Dodane przez Przemka*/
+.error {
+	color: red;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.potwierdzenie {
+	color: blue;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/*Dodane przez Przemka - koniec*/
