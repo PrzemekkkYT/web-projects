@@ -23,7 +23,7 @@ panorama2.link( panorama, new THREE.Vector3( 6000.00, 100.0, -2000.00 ) );
 
 const viewer = new PANOLENS.Viewer({
     container: panoDiv,
-    controlBar: false
+    // controlBar: false
 });
 
 viewer.add(panorama, panorama2);
