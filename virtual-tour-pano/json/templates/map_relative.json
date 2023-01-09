@@ -1,0 +1,46 @@
+{
+    "settings": {
+        "//": "Typ 'relative' służy do określenia pozycji punktu łączonego względem punktu głównego",
+        "coordinatesType": "relative",
+        "//": "ustawienie, która panorama będzie wyświetlana po wejściu na stronę",
+        "starterPoint": "point_1"
+    },
+    "panoramas": {
+        "point_1": {
+            "panoType": "image",
+            "image": "./panos/point_1.png",
+            "connections": [
+                {
+                    "id": "point_2",
+                    "position": [
+                        1,
+                        2,
+                        3
+                    ]
+                }
+            ]
+        },
+        "point_2": {
+            "panoType": "cubemap",
+            "src": "./panos/point_2/",
+            "images": {
+                "top": "top",
+                "bottom": "bottom",
+                "front": "front",
+                "back": "back",
+                "left": "left",
+                "right": "right"
+            },
+            "connections": [
+                {
+                    "id": "point_1",
+                    "position": [
+                        -1,
+                        -2,
+                        -3
+                    ]
+                }
+            ]
+        }
+    }
+}

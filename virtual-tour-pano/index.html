@@ -1,0 +1,35 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual tour</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .pano-image {
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="pano-image"></div>
+
+    <script src="js/libraries/three.min.js"></script>
+    <script src="js/libraries/panolens.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script>
+
+        const panorama = new PANOLENS.ImagePanorama( '../pano1.jpg' );
+        const viewer = new PANOLENS.Viewer();
+        viewer.add( panorama );
+        
+        </script> -->
+</body>
+</html>

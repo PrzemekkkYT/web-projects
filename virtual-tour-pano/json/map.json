@@ -1,0 +1,64 @@
+{
+    "settings": {
+        "coordinatesType": "absolute",
+        "starterPoint": "point_1",
+        "cameraAltitude": 1
+    },
+    "panoramas": {
+        "point_1": {
+            "panoType": "cubemap",
+            "src": "./panos/point_1/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "connections": [
+                "point_2",
+                "point_3"
+            ]
+        },
+        "point_2": {
+            "panoType": "cubemap",
+            "src": "./panos/point_2/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                -12,
+                -1,
+                4
+            ],
+            "connections": [
+                "point_1",
+                "point_3"
+            ]
+        },
+        "point_3": {
+            "panoType": "image",
+            "image": "./panos/panorama1.jpg",
+            "position": [
+                -10,
+                -1,
+                -2
+            ],
+            "connections": [
+                "point_1",
+                "point_2"
+            ]
+        }
+    }
+}

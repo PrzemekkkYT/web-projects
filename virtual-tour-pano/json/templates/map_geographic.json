@@ -1,0 +1,45 @@
+{
+    "settings": {
+        "//": "Typ 'relative' służy do określenia pozycji każdego punktu według współrzędnych geograficznych (szerokość, długość, wysokość)",
+        "//": "Format | stopnie:minuty:sekundy.milisekundy | następnie bez odstępu półkulę N,S | W,E | wysokość podawana jest w metrach nad poziomem morza",
+        "//": "Może nie być w pełni poprawne",
+        "//": "Jeśli odległość wyliczona punktu będzie powyżej 10/20 metrów punkt nie zostanie dodany",
+        "coordinatesType": "geographic"
+    },
+    "panoramas": [
+        {
+            "id": "point_1",
+            "panoType": "image",
+            "image": "./panos/point_1.png",
+            "position": [
+                "52:13:46.83N",
+                "21:0:44.028E",
+                "100m"
+            ],
+            "connections": [
+                "point_2"
+            ]
+        },
+        {
+            "id": "point_2",
+            "panoType": "cubemap",
+            "src": "./panos/point_2/",
+            "images": {
+                "top": "top",
+                "bottom": "bottom",
+                "front": "front",
+                "back": "back",
+                "left": "left",
+                "right": "right"
+            },
+            "position": [
+                "51:16:24:N",
+                "15:32:56:E",
+                "102m"
+            ],
+            "connections": [
+                "point_2"
+            ]
+        }
+    ]
+}

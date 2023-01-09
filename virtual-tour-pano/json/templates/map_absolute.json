@@ -1,0 +1,42 @@
+{
+    "settings": {
+        "//": "Typ 'absolute' służy do określenie pozycji pozycji każdego punktu według wcześniej ustalonych koordynatów. Program sam obliczy pozycję punktów w panoramie",
+        "coordinatesType": "absolute"
+    },
+    "panoramas": [
+        {
+            "id": "point_1",
+            "panoType": "image",
+            "image": "./panos/point_1.png",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "connections": [
+                "point_2"
+            ]
+        },
+        {
+            "id": "point_2",
+            "panoType": "cubemap",
+            "src": "./panos/point_2/",
+            "images": {
+                "top": "top",
+                "bottom": "bottom",
+                "front": "front",
+                "back": "back",
+                "left": "left",
+                "right": "right"
+            },
+            "position": [
+                2,
+                4,
+                6
+            ],
+            "connections": [
+                "point_1"
+            ]
+        }
+    ]
+}

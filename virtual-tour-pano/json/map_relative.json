@@ -1,0 +1,52 @@
+{
+    "settings": {
+        "coordinatesType": "relative",
+        "starterPoint": "point_2"
+    },
+    "panoramas": {
+        "point_1": {
+            "panoType": "cubemap",
+            "src": "./panos/point_1/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "connections": [
+                {
+                    "id": "point_2",
+                    "position": [
+                        -12,
+                        -2,
+                        4
+                    ]
+                }
+            ]
+        },
+        "point_2": {
+            "panoType": "cubemap",
+            "src": "./panos/point_2/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "connections": [
+                {
+                    "id": "point_1",
+                    "position": [
+                        12,
+                        0,
+                        -4
+                    ]
+                }
+            ]
+        }
+    }
+}
