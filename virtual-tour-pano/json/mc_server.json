@@ -1,0 +1,217 @@
+{
+    "settings": {
+        "coordinatesType": "absolute",
+        "starterPoint": "storage_nether_portal",
+        "cameraAltitude": 1
+    },
+    "panoramas": {
+        "enchant": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/enchant/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                266.5,
+                64,
+                -487.5
+            ],
+            "connections": [
+                "sugarcane",
+                "exit_door",
+                "storage_1"
+            ]
+        },
+        "sugarcane": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/sugarcane/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                253.5,
+                64,
+                -487.5
+            ],
+            "connections": [
+                "enchant",
+                "storage_1"
+            ]
+        },
+        "exit_door": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/exit_door/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                273.5,
+                64,
+                -487.5
+            ],
+            "connections": [
+                "enchant",
+                "stairs",
+                "path_1"
+            ]
+        },
+        "stairs": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/stairs/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                272,
+                61,
+                -482
+            ],
+            "connections": [
+                "exit_door"
+            ]
+        },
+        "path_1": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/path_1/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                281.5,
+                64,
+                -488.5
+            ],
+            "connections": [
+                "exit_door"
+            ]
+        },
+        "storage_1": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/storage_1/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                261,
+                64,
+                -490.5
+            ],
+            "connections": [
+                "enchant",
+                "sugarcane",
+                "storage_nether"
+            ]
+        },
+        "storage_nether": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/storage_nether/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                257.5,
+                64,
+                -494
+            ],
+            "connections": [
+                "storage_1",
+                "nether_hub_portal"
+            ]
+        },
+        "storage_nether_portal": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/storage_nether_portal/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                253.5,
+                64,
+                -494
+            ],
+            "connections": [
+                "storage_nether"
+            ]
+        },
+        "nether_hub": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/nether_hub/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                253.5,
+                64,
+                -492
+            ],
+            "connections": [
+                "storage_nether_portal"
+            ]
+        },
+        "nether_hub_portal": {
+            "panoType": "cubemap",
+            "src": "./panos/mc_server/nether_hub_portal/",
+            "images": {
+                "top": "top.png",
+                "bottom": "bottom.png",
+                "front": "front.png",
+                "back": "back.png",
+                "left": "left.png",
+                "right": "right.png"
+            },
+            "position": [
+                253.5,
+                64,
+                -494
+            ],
+            "connections": [
+                "nether_hub"
+            ]
+        }
+    }
+}
