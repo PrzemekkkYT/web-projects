@@ -1,10 +1,11 @@
 const panoDiv = document.querySelector('.pano-image');
-const mapSrc = "json/map.json";
+const mapSrc = "json/mc_server.json";
 
 const viewer = new PANOLENS.Viewer({
     container: panoDiv,
     controlBar: true,
-    autoHideInfospot: false
+    autoHideInfospot: false,
+    cameraFov: 90
 });
 
 const startApp = async () => {
@@ -99,6 +100,7 @@ const createPanos = (map) => {
                             path + pano_settings.images.top, path + pano_settings.images.bottom,
                             path + pano_settings.images.front, path + pano_settings.images.back
                         ] );
+                        newPano.uuid = id;
                         panoramas[id] = newPano;
                     } catch (error) {
                         console.error(error);
@@ -171,6 +173,20 @@ const panosConnections = (map, panoramas) => {
                 }
             }
     }
+    for (let id in panoramas) {
+        for (let spot_num in panoramas[id].linkedSpots) {
+            let spot = panoramas[id].linkedSpots[spot_num];
+            spot.addHoverText(spot.toPanorama.uuid.replace("_"," "));
+            spot.addEventListener("click", () => {
+                document.querySelectorAll(".panolens-infospot").forEach(panolens_infospot => {
+                    if (panolens_infospot.style.display != "none") {
+                        panolens_infospot.style.display = 'none';
+                    }
+                });
+            });
+        }
+    }
+    
     // console.info(panoramas);
 }
 // kontynuować robienie automatycznych panoram z ustalonej mapy.

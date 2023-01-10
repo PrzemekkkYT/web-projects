@@ -1,7 +1,7 @@
 {
     "settings": {
         "coordinatesType": "absolute",
-        "starterPoint": "storage_nether_portal",
+        "starterPoint": "enchant",
         "cameraAltitude": 1
     },
     "panoramas": {
